@@ -14,7 +14,7 @@ public class Pembelian {
         hitungJumlahBayar();
     }
 
-    private void hitungPotongan() {
+    public void hitungPotongan() {
         if (totalPembelian < 50000) {
             potongan = totalPembelian * 0.05; 
         } else {
@@ -22,7 +22,7 @@ public class Pembelian {
         }
     }
 
-    private void hitungJumlahBayar() {
+    public void hitungJumlahBayar() {
         jumlahBayar = totalPembelian - potongan;
     }
 
